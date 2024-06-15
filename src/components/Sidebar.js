@@ -8,7 +8,6 @@ export default function Sidebar() {
 
   const handleDragStart = (e, itemId) => {
     e.dataTransfer.setData("itemId", itemId);
-    console.log(e);
     const className = e.target.className;
     e.dataTransfer.setData("class", className);
     const draggedElement = e.currentTarget;
